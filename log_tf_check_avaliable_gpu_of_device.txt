@@ -1,0 +1,57 @@
+########
+# from tensorflow.python.client import device_lib
+# device_lib.list_local_devices
+# 机器装有三个显卡，两个1080一个Titan
+########
+2018-08-20 11:03:53.937598: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-08-20 11:03:54.166128: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:05:00.0
+totalMemory: 10.92GiB freeMemory: 398.12MiB
+2018-08-20 11:03:54.331800: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 1 with properties: 
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:06:00.0
+totalMemory: 10.92GiB freeMemory: 398.50MiB
+2018-08-20 11:03:54.467488: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 2 with properties: 
+name: TITAN X (Pascal) major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:09:00.0
+totalMemory: 11.91GiB freeMemory: 450.06MiB
+2018-08-20 11:03:54.467818: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Device peer to peer matrix
+2018-08-20 11:03:54.467873: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1051] DMA: 0 1 2 
+2018-08-20 11:03:54.467893: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1061] 0:   Y Y Y 
+2018-08-20 11:03:54.467902: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1061] 1:   Y Y Y 
+2018-08-20 11:03:54.467910: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1061] 2:   Y Y Y 
+2018-08-20 11:03:54.467928: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:05:00.0, compute capability: 6.1)
+2018-08-20 11:03:54.467938: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:1) -> (device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:06:00.0, compute capability: 6.1)
+2018-08-20 11:03:54.467948: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:2) -> (device: 2, name: TITAN X (Pascal), pci bus id: 0000:09:00.0, compute capability: 6.1)
+[name: "/device:CPU:0"
+device_type: "CPU"
+memory_limit: 268435456
+locality {
+}
+incarnation: 11862100781425965375
+, name: "/device:GPU:0"
+device_type: "GPU"
+memory_limit: 181534720
+locality {
+  bus_id: 1
+}
+incarnation: 15083459001905398450
+physical_device_desc: "device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:05:00.0, compute capability: 6.1"
+, name: "/device:GPU:1"
+device_type: "GPU"
+memory_limit: 181927936
+locality {
+  bus_id: 1
+}
+incarnation: 4508925264605643801
+physical_device_desc: "device: 1, name: GeForce GTX 1080 Ti, pci bus id: 0000:06:00.0, compute capability: 6.1"
+, name: "/device:GPU:2"
+device_type: "GPU"
+memory_limit: 235995136
+locality {
+  bus_id: 1
+}
+incarnation: 2859382120086220507
+physical_device_desc: "device: 2, name: TITAN X (Pascal), pci bus id: 0000:09:00.0, compute capability: 6.1"
+]
