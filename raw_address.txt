@@ -1,0 +1,3 @@
+https://raw.githubusercontent.com/Zachary4biz/Tahiti_any_data/master/pics/
+
+{:height=50% width=50%}
